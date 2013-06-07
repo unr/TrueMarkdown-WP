@@ -2,22 +2,22 @@
 /**
  * Plugin Name.
  *
- * @package   PluginName
- * @author    Your Name <email@example.com>
+ * @package   TrueMarkdown-WP
+ * @author    Paul (iamunr) Morrison <paul.unr@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2013 Your Name or Company Name
+ * @link      http://iamunr.com/truemarkdown
+ * @copyright 2013 Paul Morrison
  */
 
 /**
- * Plugin class.
+ * TrueMarkdown-WP
  *
  * TODO: Rename this class to a proper name for your plugin.
  *
- * @package PluginName
- * @author  Your Name <email@example.com>
+ * @package TrueMarkdown-WP
+ * @author  Paul (iamunr) Morrison <paul.unr@gmail.com>
  */
-class PluginName {
+class TrueMarkdown {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
@@ -26,7 +26,7 @@ class PluginName {
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.0';
+	protected $version = '0.0.1';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -38,7 +38,7 @@ class PluginName {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	protected $plugin_slug = 'truemarkdown-wp';
 
 	/**
 	 * Instance of this class.
@@ -206,13 +206,10 @@ class PluginName {
 		/*
 		 * TODO:
 		 *
-		 * Change 'Page Title' to the title of your plugin admin page
-		 * Change 'Menu Text' to the text for menu item for the plugin settings page
-		 * Change 'plugin-name' to the name of your plugin
 		 */
 		$this->plugin_screen_hook_suffix = add_plugins_page(
-			__( 'Page Title', $this->plugin_slug ),
-			__( 'Menu Text', $this->plugin_slug ),
+			__( 'TrueMarkdown', $this->plugin_slug ),
+			__( 'Settings', $this->plugin_slug ),
 			'read',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
